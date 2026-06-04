@@ -27,7 +27,7 @@ function Index() {
         <HospitalSlider />
 
         {/* Services Preview Section */}
-        <section className="relative overflow-hidden border-t border-border/40 bg-secondary/30 py-20 md:py-28">
+        <section className="relative overflow-hidden bg-secondary/30 py-20 md:py-28">
           <div className="mx-auto max-w-7xl px-6">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-xs font-semibold tracking-widest uppercase text-teal">
