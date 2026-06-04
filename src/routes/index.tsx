@@ -1,8 +1,8 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
+import { HospitalSlider } from "@/components/HospitalSlider";
 import { Footer } from "@/components/Footer";
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -22,9 +22,12 @@ function Index() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <HospitalSlider />
 
         {/* Services Preview Section */}
-        <section className="relative overflow-hidden border-t border-border/40 bg-secondary/30 py-20 md:py-28">
+        <section className="relative overflow-hidden bg-secondary/30 py-20 md:py-28">
+          {/* Top gradient for seamless transition from slider */}
+          <div className="pointer-events-none absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-background to-transparent" />
           <div className="mx-auto max-w-7xl px-6">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-xs font-semibold tracking-widest uppercase text-teal">
