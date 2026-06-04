@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Best Life Hospital | Premium Healthcare" },
+      { name: "description", content: "Best Life Hospital offers world-class medical care with compassion and precision. Book your appointment today." },
+      { name: "author", content: "Best Life Hospital" },
+      { property: "og:title", content: "Best Life Hospital | Premium Healthcare" },
+      { property: "og:description", content: "Your Health. Our Lifelong Promise. Experience world-class medical care delivered with compassion and precision." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@BestLifeHospital" },
     ],
     links: [
       {
