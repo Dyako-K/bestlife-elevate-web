@@ -24,6 +24,7 @@ function Index() {
       <Navbar />
       <main className="flex-1">
         <Hero />
+        <HospitalSlider />
 
         {/* Services Preview Section */}
         <section className="relative overflow-hidden border-t border-border/40 bg-secondary/30 py-20 md:py-28">
