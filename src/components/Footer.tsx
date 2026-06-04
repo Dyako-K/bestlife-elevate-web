@@ -1,4 +1,5 @@
-import { Heart, Mail, Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import logoAsset from "@/assets/best-life-logo.png.asset.json";
 
 export function Footer() {
   return (
@@ -6,8 +7,12 @@ export function Footer() {
       <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-6 px-6 py-10 md:flex-row">
         {/* Logo */}
         <div className="flex items-center gap-2.5">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-teal">
-            <Heart className="h-4 w-4 text-primary-foreground" fill="currentColor" />
+          <div className="flex h-10 w-10 items-center justify-center rounded-full bg-background p-1">
+            <img
+              src={logoAsset.url}
+              alt="Best Life Hospital logo"
+              className="h-full w-full object-contain"
+            />
           </div>
           <div className="flex flex-col leading-none">
             <span className="text-xs font-bold tracking-tight text-background">Best Life</span>

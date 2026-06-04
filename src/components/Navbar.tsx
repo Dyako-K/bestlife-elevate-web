@@ -1,5 +1,6 @@
 import { Link } from "@tanstack/react-router";
-import { Heart, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logoAsset from "@/assets/best-life-logo.png.asset.json";
 import { useState } from "react";
 
 export function Navbar() {
@@ -15,11 +16,13 @@ export function Navbar() {
     <header className="fixed top-0 left-0 right-0 z-50 animate-fade-in border-b border-border/40 bg-background/80 backdrop-blur-xl">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal">
-            <Heart className="h-5 w-5 text-primary-foreground" fill="currentColor" />
-          </div>
-          <div className="flex flex-col leading-none">
+        <Link to="/" className="flex items-center gap-2.5" aria-label="Best Life Hospital - Home">
+          <img
+            src={logoAsset.url}
+            alt="Best Life Hospital logo"
+            className="h-11 w-11 object-contain"
+          />
+          <div className="hidden flex-col leading-none sm:flex">
             <span className="text-sm font-bold tracking-tight text-navy">Best Life</span>
             <span className="text-[10px] font-medium tracking-widest uppercase text-muted-foreground">
               Hospital
