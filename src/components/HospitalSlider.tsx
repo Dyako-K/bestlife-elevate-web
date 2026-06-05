@@ -1,38 +1,62 @@
 import { useState, useEffect, useCallback, useRef } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import slider1 from "@/assets/slider-1.jpg";
-import slider2 from "@/assets/slider-2.jpg";
-import slider3 from "@/assets/slider-3.jpg";
-import slider4 from "@/assets/slider-4.jpg";
+import slide1 from "@/assets/hospital-1.jpg.asset.json";
+import slide2 from "@/assets/hospital-2.jpg.asset.json";
+import slide3 from "@/assets/hospital-3.jpg.asset.json";
+import slide4 from "@/assets/hospital-4.jpg.asset.json";
+import slide5 from "@/assets/hospital-5.jpg.asset.json";
+import slide6 from "@/assets/hospital-6.jpg.asset.json";
+import slide7 from "@/assets/hospital-7.jpg.asset.json";
 
 const slides = [
   {
-    image: slider1,
-    title: "World-Class Facilities",
+    image: slide7.url,
+    title: "Best Life Hospital",
     description:
-      "Experience healthcare in an environment designed for comfort, healing, and peace of mind.",
-    alt: "Modern luxury hospital reception and waiting area",
+      "A modern facility designed for healing, comfort, and trusted care — open 24 hours a day, 7 days a week.",
+    alt: "Best Life Hospital building exterior",
   },
   {
-    image: slider2,
-    title: "Cutting-Edge Technology",
+    image: slide1.url,
+    title: "Physical Therapy & Rehabilitation",
     description:
-      "Equipped with the latest diagnostic and therapeutic technology for precise, effective care.",
-    alt: "Advanced medical imaging equipment in a modern hospital",
+      "Personalized rehabilitation programs guided by expert therapists to restore strength and mobility.",
+    alt: "Physical therapy session with specialist",
   },
   {
-    image: slider3,
-    title: "Patient-Centered Care",
+    image: slide5.url,
+    title: "Women & Maternity Clinic",
     description:
-      "Every interaction is guided by compassion, respect, and a deep commitment to your well-being.",
-    alt: "Compassionate doctor consulting with a patient",
+      "Compassionate maternal care with specialized doctors supporting every stage of pregnancy and beyond.",
+    alt: "Maternity and women's health clinic",
   },
   {
-    image: slider4,
-    title: "Surgical Excellence",
+    image: slide6.url,
+    title: "Advanced Ultrasound Imaging",
     description:
-      "Our state-of-the-art operating theaters and expert surgical teams deliver exceptional outcomes.",
-    alt: "Modern state-of-the-art operating room",
+      "State-of-the-art ultrasound diagnostics available throughout the week for precise, timely results.",
+    alt: "Advanced ultrasound imaging equipment",
+  },
+  {
+    image: slide3.url,
+    title: "Nephrology & Urology Clinic",
+    description:
+      "Dedicated specialists protecting your kidney and urinary health with comprehensive treatment plans.",
+    alt: "Nephrology clinic visual",
+  },
+  {
+    image: slide4.url,
+    title: "Breast Cancer Awareness & Care",
+    description:
+      "Early detection, screening, and supportive care guided by our specialized medical team.",
+    alt: "Breast cancer awareness",
+  },
+  {
+    image: slide2.url,
+    title: "Best Life Pharmacy",
+    description:
+      "A fully stocked in-house pharmacy offering trusted brands and seasonal offers for our patients.",
+    alt: "Best Life pharmacy products",
   },
 ];
 

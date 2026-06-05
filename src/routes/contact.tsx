@@ -18,7 +18,7 @@ function ContactPage() {
   return (
     <div className="flex min-h-screen flex-col bg-background">
       <Navbar />
-      <main className="flex-1 pt-24">
+      <main className="flex-1 pt-32">
         {/* Header */}
         <section className="border-b border-border/40 pb-16 pt-10">
           <div className="mx-auto max-w-7xl px-6">
@@ -52,7 +52,7 @@ function ContactPage() {
                   <p className="mt-2 text-sm text-muted-foreground">
                     Call us anytime for appointments or general inquiries.
                   </p>
-                  <p className="mt-3 text-base font-semibold text-teal">07713846655</p>
+                  <p className="mt-3 text-base font-semibold text-teal">07709510001</p>
                 </div>
 
                 <div className="rounded-2xl border border-border bg-card p-7 transition-all hover:border-teal/20 hover:shadow-lg hover:shadow-teal/5">
@@ -63,7 +63,7 @@ function ContactPage() {
                   <p className="mt-2 text-sm text-muted-foreground">
                     Send us an email and we will get back to you within 24 hours.
                   </p>
-                  <p className="mt-3 text-base font-semibold text-teal">diako.kaso@gmail.com</p>
+                  <p className="mt-3 text-base font-semibold text-teal">info@bestlifehospital.com</p>
                 </div>
 
                 <div className="rounded-2xl border border-border bg-card p-7 transition-all hover:border-teal/20 hover:shadow-lg hover:shadow-teal/5">

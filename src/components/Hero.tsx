@@ -4,7 +4,7 @@ import heroImage from "@/assets/hero-medical.jpg";
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden pt-24 pb-20 md:pt-32 md:pb-28">
+    <section className="relative overflow-hidden pt-32 pb-20 md:pt-40 md:pb-28">
       {/* Subtle background decoration */}
       <div className="pointer-events-none absolute inset-0 overflow-hidden">
         <div className="absolute -top-40 -right-40 h-[500px] w-[500px] rounded-full bg-teal/5 blur-3xl" />
