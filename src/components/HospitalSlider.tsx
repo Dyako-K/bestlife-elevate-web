@@ -11,52 +11,52 @@ import slide7 from "@/assets/hospital-7.jpg.asset.json";
 const slides = [
   {
     image: slide7.url,
-    title: "Best Life Hospital",
+    title: "نەخۆشخانەی بێست لایف",
     description:
-      "A modern facility designed for healing, comfort, and trusted care — open 24 hours a day, 7 days a week.",
-    alt: "Best Life Hospital building exterior",
+      "بنیاتێکی مۆدێرن کە دروستکراوە بۆ چاکبوونەوە، ئاسوودەیی و چاودێرییەکی متمانەپێکراو — کراوەیە ٢٤ کاتژمێر لە ٧ ڕۆژدا.",
+    alt: "تەلارەکەی نەخۆشخانەی بێست لایف",
   },
   {
     image: slide1.url,
-    title: "Physical Therapy & Rehabilitation",
+    title: "بەشی چارەسەری سروشتی",
     description:
-      "Personalized rehabilitation programs guided by expert therapists to restore strength and mobility.",
-    alt: "Physical therapy session with specialist",
+      "پلانی چارەسەری تایبەت بە هەر نەخۆشێک، بەڕێوەبراو لەلایەن پسپۆڕانی پایەبەرز بۆ گەڕاندنەوەی توانا و جوڵە.",
+    alt: "بەشی چارەسەری سروشتی",
   },
   {
     image: slide5.url,
-    title: "Women & Maternity Clinic",
+    title: "کلینیکی ژنان و منداڵبوون",
     description:
-      "Compassionate maternal care with specialized doctors supporting every stage of pregnancy and beyond.",
-    alt: "Maternity and women's health clinic",
+      "چاودێریی بەزەییانە بۆ دایکان لە سەرجەم قۆناغەکانی دووگیانی و دواتر، لەلایەن پزیشکی پسپۆڕەوە.",
+    alt: "کلینیکی ژنان و منداڵبوون",
   },
   {
     image: slide6.url,
-    title: "Advanced Ultrasound Imaging",
+    title: "پزیشکی سۆنار پێشکەوتوو",
     description:
-      "State-of-the-art ultrasound diagnostics available throughout the week for precise, timely results.",
-    alt: "Advanced ultrasound imaging equipment",
+      "ئامێری سۆناری پێشکەوتوو لە سەرجەم ڕۆژەکانی هەفتە بۆ دەستنیشانکردنی ورد و خێرا.",
+    alt: "ئامێری سۆناری پێشکەوتوو",
   },
   {
     image: slide3.url,
-    title: "Nephrology & Urology Clinic",
+    title: "کلینیکی گورچیلە و میزەڕۆ",
     description:
-      "Dedicated specialists protecting your kidney and urinary health with comprehensive treatment plans.",
-    alt: "Nephrology clinic visual",
+      "پسپۆڕانی تایبەت بۆ پاراستن و چارەسەری نەخۆشییەکانی گورچیلە و میزەڕۆ بە پلانێکی تەواو.",
+    alt: "کلینیکی گورچیلە",
   },
   {
     image: slide4.url,
-    title: "Breast Cancer Awareness & Care",
+    title: "ئاگاداری و چارەسەری شێرپەنجەی مەمک",
     description:
-      "Early detection, screening, and supportive care guided by our specialized medical team.",
-    alt: "Breast cancer awareness",
+      "دەستنیشانکردنی زوو، پشکنین و چاودێریی تایبەت لەلایەن تیمی پزیشکی پسپۆڕەوە.",
+    alt: "ئاگاداری شێرپەنجەی مەمک",
   },
   {
     image: slide2.url,
-    title: "Best Life Pharmacy",
+    title: "دەرمانخانەی بێست لایف",
     description:
-      "A fully stocked in-house pharmacy offering trusted brands and seasonal offers for our patients.",
-    alt: "Best Life pharmacy products",
+      "دەرمانخانەیەکی تەواو بە براندە متمانەپێکراوەکان و داشکاندنی تایبەت بۆ نەخۆشانمان.",
+    alt: "دەرمانخانەی بێست لایف",
   },
 ];
 
