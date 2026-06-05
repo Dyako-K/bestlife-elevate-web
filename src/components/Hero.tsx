@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { ArrowRight, Shield, Clock, Users } from "lucide-react";
+import { ArrowLeft, Shield, Clock, Users } from "lucide-react";
 import heroImage from "@/assets/hero-medical.jpg";
 
 export function Hero() {
@@ -13,20 +13,21 @@ export function Hero() {
 
       <div className="relative mx-auto flex max-w-7xl flex-col items-center gap-12 px-6 lg:flex-row lg:gap-16">
         {/* Text Content */}
-        <div className="flex flex-col items-start text-left lg:w-1/2">
-          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal/5 px-4 py-1.5 text-xs font-semibold tracking-wide uppercase text-teal animate-fade-in-up">
+        <div className="flex flex-col items-start text-right lg:w-1/2">
+          <div className="mb-5 inline-flex items-center gap-2 rounded-full border border-teal/20 bg-teal/5 px-4 py-1.5 text-xs font-semibold tracking-wide text-teal animate-fade-in-up">
             <Shield className="h-3.5 w-3.5" />
-            Premium Healthcare Since 1998
+            خزمەتگوزاری پزیشکی پێشکەوتوو لە ساڵی ١٩٩٨ەوە
           </div>
 
-          <h1 className="max-w-xl text-4xl font-extrabold leading-[1.1] tracking-tight text-navy md:text-5xl lg:text-[3.5rem] animate-fade-in-up delay-100">
-            Your Health.{" "}
-            <span className="text-teal">Our Lifelong Promise.</span>
+          <h1 className="max-w-xl text-4xl font-extrabold leading-[1.2] tracking-tight text-navy md:text-5xl lg:text-[3.25rem] animate-fade-in-up delay-100">
+            تەندروستی تۆ.{" "}
+            <span className="text-teal">بەڵێنی ژیانمان.</span>
           </h1>
 
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg animate-fade-in-up delay-200">
-            Experience world-class medical care delivered with compassion, precision, and an
-            unwavering commitment to your well-being. Your journey to better health starts here.
+            ئەزموونی چاودێری پزیشکی لە ئاستی جیهانیدا، پێشکەشکراو بە بەزەیی، وردی و
+            پابەندبوونێکی بێ کۆتایی بە تەندروستی تۆ. گەشتی تۆ بەرەو تەندروستییەکی باشتر
+            لێرە دەست پێدەکات.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-in-up delay-300">
@@ -34,14 +35,14 @@ export function Hero() {
               to="/contact"
               className="btn-pulse inline-flex items-center gap-2 rounded-full bg-teal px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-lg shadow-teal/20 transition-all hover:bg-teal-dark hover:shadow-teal/30"
             >
-              Book an Appointment
-              <ArrowRight className="h-4 w-4" />
+              تۆمارکردنی ژوانێک
+              <ArrowLeft className="h-4 w-4" />
             </Link>
             <Link
               to="/services"
               className="inline-flex items-center gap-2 rounded-full border border-border bg-card px-7 py-3.5 text-sm font-semibold text-navy transition-colors hover:bg-secondary"
             >
-              Explore Services
+              بینینی خزمەتگوزارییەکان
             </Link>
           </div>
 
@@ -49,11 +50,11 @@ export function Hero() {
           <div className="mt-10 flex flex-wrap items-center gap-6 animate-fade-in-up delay-400">
             <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
               <Clock className="h-4 w-4 text-teal" />
-              24/7 Emergency Care
+              چاودێری فریاکەوتن ٢٤/٧
             </div>
             <div className="flex items-center gap-2 text-xs font-medium text-muted-foreground">
               <Users className="h-4 w-4 text-teal" />
-              200+ Expert Doctors
+              زیاتر لە ٢٠٠ پزیشکی پسپۆڕ
             </div>
           </div>
         </div>
@@ -63,22 +64,21 @@ export function Hero() {
           <div className="relative overflow-hidden rounded-2xl shadow-2xl shadow-navy/10">
             <img
               src={heroImage}
-              alt="Modern hospital interior with caring medical staff"
+              alt="ناوەوەی نەخۆشخانەی مۆدێرن"
               className="h-auto w-full object-cover"
               loading="eager"
             />
-            {/* Gradient overlay at bottom */}
             <div className="absolute inset-x-0 bottom-0 h-24 bg-gradient-to-t from-navy/30 to-transparent" />
           </div>
 
           {/* Floating stat card */}
-          <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-border bg-card p-4 shadow-xl md:block animate-fade-in-up delay-500">
-            <div className="text-2xl font-extrabold text-navy">50K+</div>
-            <div className="text-xs font-medium text-muted-foreground">Patients Treated</div>
+          <div className="absolute -bottom-6 -right-6 hidden rounded-xl border border-border bg-card p-4 shadow-xl md:block animate-fade-in-up delay-500">
+            <div className="text-2xl font-extrabold text-navy">+٥٠ هەزار</div>
+            <div className="text-xs font-medium text-muted-foreground">نەخۆش چارەسەرکراوە</div>
           </div>
 
           {/* Floating rating card */}
-          <div className="absolute -top-4 -right-4 hidden rounded-xl border border-border bg-card p-4 shadow-xl md:block animate-fade-in-up delay-600">
+          <div className="absolute -top-4 -left-4 hidden rounded-xl border border-border bg-card p-4 shadow-xl md:block animate-fade-in-up delay-600">
             <div className="flex items-center gap-1">
               {[1, 2, 3, 4, 5].map((i) => (
                 <svg key={i} className="h-4 w-4 text-teal" fill="currentColor" viewBox="0 0 20 20">
@@ -86,7 +86,7 @@ export function Hero() {
                 </svg>
               ))}
             </div>
-            <div className="mt-1 text-xs font-medium text-muted-foreground">4.9 Patient Rating</div>
+            <div className="mt-1 text-xs font-medium text-muted-foreground">٤.٩ هەڵسەنگاندنی نەخۆشان</div>
           </div>
         </div>
       </div>

@@ -8,9 +8,9 @@ export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   const navLinks = [
-    { label: "Home", to: "/" },
-    { label: "Services", to: "/services" },
-    { label: "Contact Us", to: "/contact" },
+    { label: "سەرەکی", to: "/" },
+    { label: "خزمەتگوزارییەکان", to: "/services" },
+    { label: "پەیوەندیمان پێوە بکە", to: "/contact" },
   ];
 
   return (
@@ -18,14 +18,14 @@ export function Navbar() {
       <PreHeader />
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2.5" aria-label="Best Life Hospital - Home">
+        <Link to="/" className="flex items-center gap-2.5" aria-label="نەخۆشخانەی بێست لایف - سەرەکی">
           <img
             src={logoAsset.url}
             alt="Best Life Hospital logo"
             className="h-11 w-11 object-contain"
           />
           <div className="hidden flex-col leading-none sm:flex">
-            <span className="text-sm font-bold tracking-tight text-navy">Best Life</span>
+            <span className="text-sm font-bold tracking-tight text-navy">بێست لایف</span>
             <span className="text-[10px] font-medium tracking-widest uppercase text-muted-foreground">
               Hospital
             </span>
@@ -50,7 +50,7 @@ export function Navbar() {
         <button
           className="inline-flex h-9 w-9 items-center justify-center rounded-md md:hidden"
           onClick={() => setMobileOpen(!mobileOpen)}
-          aria-label="Toggle menu"
+          aria-label="کردنەوەی لیست"
         >
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
