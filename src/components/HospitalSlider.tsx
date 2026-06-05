@@ -194,7 +194,7 @@ export function HospitalSlider() {
             <button
               onClick={prev}
               className="absolute top-1/2 left-4 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white hover:scale-110 group-hover:opacity-100 md:left-6 md:h-12 md:w-12"
-              aria-label="Previous slide"
+              aria-label="سلایدی پێشوو"
             >
               <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
             </button>
