@@ -3,13 +3,15 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { HospitalSlider } from "@/components/HospitalSlider";
 import { Footer } from "@/components/Footer";
+import { Stethoscope, HeartPulse, Baby, Brain, Activity, Bone } from "lucide-react";
+
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Best Life Hospital | Premium Healthcare" },
-      { name: "description", content: "Best Life Hospital offers world-class medical care with compassion and precision. Book your appointment today." },
-      { property: "og:title", content: "Best Life Hospital | Premium Healthcare" },
-      { property: "og:description", content: "Your Health. Our Lifelong Promise. Experience world-class medical care delivered with compassion and precision." },
+      { title: "نەخۆشخانەی بێست لایف | چاودێریی تەندروستی پایەبەرز" },
+      { name: "description", content: "نەخۆشخانەی بێست لایف چاودێریی پزیشکی لە ئاستی جیهانیدا پێشکەش دەکات بە بەزەیی و وردی. ژوانەکەت ئەمڕۆ تۆمار بکە." },
+      { property: "og:title", content: "نەخۆشخانەی بێست لایف | چاودێریی تەندروستی پایەبەرز" },
+      { property: "og:description", content: "تەندروستی تۆ. بەڵێنی ژیانمان." },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -26,19 +28,18 @@ function Index() {
 
         {/* Services Preview Section */}
         <section className="relative overflow-hidden bg-secondary/30 py-20 md:py-28">
-          {/* Top gradient for seamless transition from slider */}
           <div className="pointer-events-none absolute top-0 left-0 right-0 h-20 bg-gradient-to-b from-background to-transparent" />
           <div className="mx-auto max-w-7xl px-6">
             <div className="mx-auto max-w-2xl text-center">
               <span className="text-xs font-semibold tracking-widest uppercase text-teal">
-                Our Services
+                خزمەتگوزارییەکانمان
               </span>
               <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-navy md:text-4xl">
-                Comprehensive Care for Every Stage of Life
+                چاودێرییەکی تەواو بۆ هەموو قۆناغەکانی ژیان
               </h2>
               <p className="mt-4 text-base text-muted-foreground">
-                From preventive checkups to advanced surgical procedures, our multidisciplinary teams
-                deliver exceptional outcomes across every medical specialty.
+                لە پشکنینی پاراستنەوە بۆ نەشتەرگەرییە پێشکەوتووەکان، تیمە پسپۆڕەکانمان
+                ئەنجامی نایاب پێشکەش دەکەن لە هەموو بەشە پزیشکییەکاندا.
               </p>
             </div>
 
@@ -81,44 +82,42 @@ function Index() {
   );
 }
 
-import { Stethoscope, HeartPulse, Baby, Brain, Activity, Bone } from "lucide-react";
-
 const services = [
   {
-    title: "Cardiology",
-    description: "Advanced heart care with state-of-the-art diagnostics, interventional procedures, and cardiac rehabilitation programs.",
+    title: "نەخۆشییەکانی دڵ",
+    description: "چاودێریی پێشکەوتووی دڵ بە دەستنیشانکردنی ورد، نەشتەرگەری و بەرنامەکانی چاکبوونەوەی دڵ.",
     icon: HeartPulse,
   },
   {
-    title: "General Medicine",
-    description: "Comprehensive primary care, preventive screenings, and chronic disease management tailored to your unique health profile.",
+    title: "پزیشکیی گشتی",
+    description: "چاودێریی سەرەکی تەواو، پشکنینی پاراستن و بەڕێوەبردنی نەخۆشییە درێژخایەنەکان بەپێی پێداویستی تۆ.",
     icon: Stethoscope,
   },
   {
-    title: "Pediatrics",
-    description: "Gentle, family-centered care for infants, children, and adolescents from birth through young adulthood.",
+    title: "نەخۆشییەکانی منداڵان",
+    description: "چاودێرییەکی بەزەییانە و خێزانی بۆ ساوا، منداڵ و گەنجان لە ژاوەژاوێکی گەرم و دڵنیادا.",
     icon: Baby,
   },
   {
-    title: "Neurology",
-    description: "Expert diagnosis and treatment of neurological conditions with cutting-edge imaging and therapeutic techniques.",
+    title: "نەخۆشییەکانی دەماروو",
+    description: "دەستنیشانکردن و چارەسەری پسپۆڕانە بۆ نەخۆشییەکانی دەماروو بە تەکنەلۆژیای پێشکەوتوو.",
     icon: Brain,
   },
   {
-    title: "Orthopedics",
-    description: "Restoring mobility through advanced joint replacement, sports medicine, and minimally invasive spine surgery.",
+    title: "نەشتەرگەری ئێسک و جومگە",
+    description: "گەڕاندنەوەی جوڵە بە جێگرتنەوەی جومگە، پزیشکیی وەرزشی و نەشتەرگەری بڕبڕە.",
     icon: Bone,
   },
   {
-    title: "Emergency Care",
-    description: "Round-the-clock emergency services with rapid response teams and fully equipped trauma centers.",
+    title: "چاودێریی فریاکەوتن",
+    description: "خزمەتگوزاریی فریاکەوتن ٢٤ کاتژمێر، تیمی وەڵامدانەوەی خێرا و ناوەندی فریاکەوتنی تەواو.",
     icon: Activity,
   },
 ];
 
 const stats = [
-  { value: "25+", label: "Years of Excellence" },
-  { value: "200+", label: "Specialist Doctors" },
-  { value: "50K+", label: "Patients Treated" },
-  { value: "99%", label: "Patient Satisfaction" },
+  { value: "+٢٥", label: "ساڵ لە نایابیدا" },
+  { value: "+٢٠٠", label: "پزیشکی پسپۆڕ" },
+  { value: "+٥٠ هەزار", label: "نەخۆش چارەسەرکراوە" },
+  { value: "٪٩٩", label: "ڕەزامەندیی نەخۆشان" },
 ];

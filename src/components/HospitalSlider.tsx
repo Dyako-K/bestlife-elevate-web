@@ -11,52 +11,52 @@ import slide7 from "@/assets/hospital-7.jpg.asset.json";
 const slides = [
   {
     image: slide7.url,
-    title: "Best Life Hospital",
+    title: "نەخۆشخانەی بێست لایف",
     description:
-      "A modern facility designed for healing, comfort, and trusted care — open 24 hours a day, 7 days a week.",
-    alt: "Best Life Hospital building exterior",
+      "بنیاتێکی مۆدێرن کە دروستکراوە بۆ چاکبوونەوە، ئاسوودەیی و چاودێرییەکی متمانەپێکراو — کراوەیە ٢٤ کاتژمێر لە ٧ ڕۆژدا.",
+    alt: "تەلارەکەی نەخۆشخانەی بێست لایف",
   },
   {
     image: slide1.url,
-    title: "Physical Therapy & Rehabilitation",
+    title: "بەشی چارەسەری سروشتی",
     description:
-      "Personalized rehabilitation programs guided by expert therapists to restore strength and mobility.",
-    alt: "Physical therapy session with specialist",
+      "پلانی چارەسەری تایبەت بە هەر نەخۆشێک، بەڕێوەبراو لەلایەن پسپۆڕانی پایەبەرز بۆ گەڕاندنەوەی توانا و جوڵە.",
+    alt: "بەشی چارەسەری سروشتی",
   },
   {
     image: slide5.url,
-    title: "Women & Maternity Clinic",
+    title: "کلینیکی ژنان و منداڵبوون",
     description:
-      "Compassionate maternal care with specialized doctors supporting every stage of pregnancy and beyond.",
-    alt: "Maternity and women's health clinic",
+      "چاودێریی بەزەییانە بۆ دایکان لە سەرجەم قۆناغەکانی دووگیانی و دواتر، لەلایەن پزیشکی پسپۆڕەوە.",
+    alt: "کلینیکی ژنان و منداڵبوون",
   },
   {
     image: slide6.url,
-    title: "Advanced Ultrasound Imaging",
+    title: "پزیشکی سۆنار پێشکەوتوو",
     description:
-      "State-of-the-art ultrasound diagnostics available throughout the week for precise, timely results.",
-    alt: "Advanced ultrasound imaging equipment",
+      "ئامێری سۆناری پێشکەوتوو لە سەرجەم ڕۆژەکانی هەفتە بۆ دەستنیشانکردنی ورد و خێرا.",
+    alt: "ئامێری سۆناری پێشکەوتوو",
   },
   {
     image: slide3.url,
-    title: "Nephrology & Urology Clinic",
+    title: "کلینیکی گورچیلە و میزەڕۆ",
     description:
-      "Dedicated specialists protecting your kidney and urinary health with comprehensive treatment plans.",
-    alt: "Nephrology clinic visual",
+      "پسپۆڕانی تایبەت بۆ پاراستن و چارەسەری نەخۆشییەکانی گورچیلە و میزەڕۆ بە پلانێکی تەواو.",
+    alt: "کلینیکی گورچیلە",
   },
   {
     image: slide4.url,
-    title: "Breast Cancer Awareness & Care",
+    title: "ئاگاداری و چارەسەری شێرپەنجەی مەمک",
     description:
-      "Early detection, screening, and supportive care guided by our specialized medical team.",
-    alt: "Breast cancer awareness",
+      "دەستنیشانکردنی زوو، پشکنین و چاودێریی تایبەت لەلایەن تیمی پزیشکی پسپۆڕەوە.",
+    alt: "ئاگاداری شێرپەنجەی مەمک",
   },
   {
     image: slide2.url,
-    title: "Best Life Pharmacy",
+    title: "دەرمانخانەی بێست لایف",
     description:
-      "A fully stocked in-house pharmacy offering trusted brands and seasonal offers for our patients.",
-    alt: "Best Life pharmacy products",
+      "دەرمانخانەیەکی تەواو بە براندە متمانەپێکراوەکان و داشکاندنی تایبەت بۆ نەخۆشانمان.",
+    alt: "دەرمانخانەی بێست لایف",
   },
 ];
 
@@ -128,14 +128,14 @@ export function HospitalSlider() {
         {/* Section header */}
         <div className="mb-12 text-center">
           <span className="text-xs font-semibold tracking-widest uppercase text-teal">
-            Inside Our Hospital
+            ناوەوەی نەخۆشخانەکەمان
           </span>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-navy md:text-4xl">
-            Where Healing Meets Innovation
+            شوێنێک کە چاکبوونەوە و داهێنان لێکدەگەن
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-            Take a glimpse into the spaces, people, and technology that make Best Life Hospital
-            a leader in premium healthcare.
+            تەماشایەکی بەشە جیاوازەکانی نەخۆشخانە، تیمە پزیشکییەکان و تەکنەلۆژیای پێشکەوتوومان بکە
+            کە بێست لایفی کردووە بە ڕابەری چاودێریی تەندروستی پایەبەرز.
           </p>
         </div>
 
@@ -194,14 +194,14 @@ export function HospitalSlider() {
             <button
               onClick={prev}
               className="absolute top-1/2 left-4 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white hover:scale-110 group-hover:opacity-100 md:left-6 md:h-12 md:w-12"
-              aria-label="Previous slide"
+              aria-label="سلایدی پێشوو"
             >
               <ChevronLeft className="h-5 w-5 md:h-6 md:w-6" />
             </button>
             <button
               onClick={next}
               className="absolute top-1/2 right-4 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white hover:scale-110 group-hover:opacity-100 md:right-6 md:h-12 md:w-12"
-              aria-label="Next slide"
+              aria-label="سلایدی داهاتوو"
             >
               <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
             </button>
@@ -218,7 +218,7 @@ export function HospitalSlider() {
                     ? "w-8 bg-teal"
                     : "w-2.5 bg-border hover:bg-teal/40"
                 }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`بڕۆ بۆ سلایدی ${index + 1}`}
               />
             ))}
           </div>

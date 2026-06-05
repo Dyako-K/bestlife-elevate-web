@@ -1,14 +1,13 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
-import { ArrowLeft, HeartPulse, Stethoscope, Baby, Brain, Bone, Activity, Microscope, Syringe, Pill } from "lucide-react";
-import { Link } from "@tanstack/react-router";
+import { ArrowRight, HeartPulse, Stethoscope, Baby, Brain, Bone, Activity, Microscope, Syringe, Pill } from "lucide-react";
 
 export const Route = createFileRoute("/services")({
   head: () => ({
     meta: [
-      { title: "Our Services | Best Life Hospital" },
-      { name: "description", content: "Explore our comprehensive range of premium medical services at Best Life Hospital." },
+      { title: "خزمەتگوزارییەکانمان | نەخۆشخانەی بێست لایف" },
+      { name: "description", content: "ئاشنابوون بە کۆمەڵە خزمەتگوزاریی پزیشکی پایەبەرزەکانمان لە نەخۆشخانەی بێست لایف." },
     ],
   }),
   component: ServicesPage,
@@ -26,15 +25,15 @@ function ServicesPage() {
               to="/"
               className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-teal"
             >
-              <ArrowLeft className="h-4 w-4" />
-              Back to Home
+              <ArrowRight className="h-4 w-4" />
+              گەڕانەوە بۆ سەرەکی
             </Link>
             <h1 className="mt-6 text-4xl font-extrabold tracking-tight text-navy md:text-5xl">
-              Our Services
+              خزمەتگوزارییەکانمان
             </h1>
             <p className="mt-4 max-w-xl text-base text-muted-foreground">
-              Comprehensive, patient-centered care across every medical specialty. Every service is
-              delivered with the same commitment to excellence that defines Best Life Hospital.
+              چاودێرییەکی تەواو و نەخۆش-ناوەند لە هەموو بەشە پزیشکییەکاندا. هەر خزمەتگوزارییەک
+              پێشکەش دەکرێت بە هەمان پابەندبوون بە نایابی کە بێست لایف پێناسە دەکات.
             </p>
           </div>
         </section>
@@ -57,8 +56,8 @@ function ServicesPage() {
                     {service.description}
                   </p>
                   <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-teal opacity-0 transition-opacity group-hover:opacity-100">
-                    Learn more
-                    <ArrowLeft className="h-3.5 w-3.5 rotate-180" />
+                    زانیاری زیاتر
+                    <ArrowRight className="h-3.5 w-3.5 rotate-180" />
                   </div>
                 </div>
               ))}
@@ -73,48 +72,48 @@ function ServicesPage() {
 
 const allServices = [
   {
-    title: "Cardiology",
-    description: "Advanced heart care with state-of-the-art diagnostics, interventional procedures, and cardiac rehabilitation programs led by board-certified cardiologists.",
+    title: "نەخۆشییەکانی دڵ",
+    description: "چاودێریی پێشکەوتووی دڵ بە دەستنیشانکردنی ورد، نەشتەرگەری و بەرنامەکانی چاکبوونەوەی دڵ لەلایەن پسپۆڕانی پایەبەرزەوە.",
     icon: HeartPulse,
   },
   {
-    title: "General Medicine",
-    description: "Comprehensive primary care, preventive screenings, and chronic disease management tailored to your unique health profile and lifestyle.",
+    title: "پزیشکیی گشتی",
+    description: "چاودێریی سەرەکی تەواو، پشکنینی پاراستن و بەڕێوەبردنی نەخۆشییە درێژخایەنەکان بەپێی پێداویستی تەندروستی تۆ.",
     icon: Stethoscope,
   },
   {
-    title: "Pediatrics",
-    description: "Gentle, family-centered care for infants, children, and adolescents from birth through young adulthood in a warm, welcoming environment.",
+    title: "نەخۆشییەکانی منداڵان",
+    description: "چاودێرییەکی بەزەییانە و خێزانی بۆ ساوا، منداڵ و گەنجان لە ژینگەیەکی گەرم و دڵنیادا.",
     icon: Baby,
   },
   {
-    title: "Neurology",
-    description: "Expert diagnosis and treatment of neurological conditions with cutting-edge imaging, neurophysiology, and therapeutic techniques.",
+    title: "نەخۆشییەکانی دەماروو",
+    description: "دەستنیشانکردن و چارەسەری پسپۆڕانە بۆ نەخۆشییەکانی دەماروو بە تەکنەلۆژیای پێشکەوتوو و وێنەگرتنی پێشکەوتوو.",
     icon: Brain,
   },
   {
-    title: "Orthopedics",
-    description: "Restoring mobility through advanced joint replacement, sports medicine, and minimally invasive spine surgery by renowned orthopedic surgeons.",
+    title: "نەشتەرگەری ئێسک و جومگە",
+    description: "گەڕاندنەوەی جوڵە بە جێگرتنەوەی جومگە، پزیشکیی وەرزشی و نەشتەرگەری بڕبڕە لەلایەن نەشتەرگەرە بەناوبانگەکانەوە.",
     icon: Bone,
   },
   {
-    title: "Emergency Care",
-    description: "Round-the-clock emergency services with rapid response teams, fully equipped trauma centers, and ambulance services.",
+    title: "چاودێریی فریاکەوتن",
+    description: "خزمەتگوزاریی فریاکەوتن ٢٤ کاتژمێر بە تیمی وەڵامدانەوەی خێرا و ناوەندی فریاکەوتنی تەواو.",
     icon: Activity,
   },
   {
-    title: "Laboratory & Diagnostics",
-    description: "Full-service pathology, microbiology, hematology, and molecular diagnostics with rapid turnaround times and uncompromising accuracy.",
+    title: "تاقیگە و دەستنیشانکردن",
+    description: "پاتۆلۆجی، میکرۆبیۆلۆجی، خوێن و دەستنیشانکردنی مۆلیکولی بە خێرایی و وردیی بێ کۆتایی.",
     icon: Microscope,
   },
   {
-    title: "Vaccination & Immunization",
-    description: "Complete immunization programs for all ages, including travel vaccines, seasonal flu shots, and specialized vaccination schedules.",
+    title: "کوتانی پارێزەری",
+    description: "بەرنامەی کوتانی تەواو بۆ هەموو تەمەنەکان، لەوانە کوتانی گەشت و کوتانی وەرزی.",
     icon: Syringe,
   },
   {
-    title: "Pharmacy Services",
-    description: "On-site pharmacy with an extensive formulary, medication counseling, and personalized prescription management for optimal therapeutic outcomes.",
+    title: "خزمەتگوزاریی دەرمانخانە",
+    description: "دەرمانخانەی ناوەوە بە دەرمانی فراوان، ڕێنمایی دەرمانی و بەڕێوەبردنی تایبەتیی نووسراوەکان.",
     icon: Pill,
   },
 ];
