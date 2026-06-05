@@ -2,6 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Menu, X } from "lucide-react";
 import logoAsset from "@/assets/best-life-logo.png.asset.json";
 import { useState } from "react";
+import { PreHeader } from "@/components/PreHeader";
 
 export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -14,6 +15,7 @@ export function Navbar() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 animate-fade-in border-b border-border/40 bg-background/80 backdrop-blur-xl">
+      <PreHeader />
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2.5" aria-label="Best Life Hospital - Home">
