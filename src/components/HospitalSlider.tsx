@@ -201,7 +201,7 @@ export function HospitalSlider() {
             <button
               onClick={next}
               className="absolute top-1/2 right-4 z-10 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-navy opacity-0 shadow-lg backdrop-blur-sm transition-all duration-300 hover:bg-white hover:scale-110 group-hover:opacity-100 md:right-6 md:h-12 md:w-12"
-              aria-label="Next slide"
+              aria-label="سلایدی داهاتوو"
             >
               <ChevronRight className="h-5 w-5 md:h-6 md:w-6" />
             </button>
@@ -218,7 +218,7 @@ export function HospitalSlider() {
                     ? "w-8 bg-teal"
                     : "w-2.5 bg-border hover:bg-teal/40"
                 }`}
-                aria-label={`Go to slide ${index + 1}`}
+                aria-label={`بڕۆ بۆ سلایدی ${index + 1}`}
               />
             ))}
           </div>
