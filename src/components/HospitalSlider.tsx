@@ -128,14 +128,14 @@ export function HospitalSlider() {
         {/* Section header */}
         <div className="mb-12 text-center">
           <span className="text-xs font-semibold tracking-widest uppercase text-teal">
-            Inside Our Hospital
+            ناوەوەی نەخۆشخانەکەمان
           </span>
           <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-navy md:text-4xl">
-            Where Healing Meets Innovation
+            شوێنێک کە چاکبوونەوە و داهێنان لێکدەگەن
           </h2>
           <p className="mx-auto mt-4 max-w-xl text-base text-muted-foreground">
-            Take a glimpse into the spaces, people, and technology that make Best Life Hospital
-            a leader in premium healthcare.
+            تەماشایەکی بەشە جیاوازەکانی نەخۆشخانە، تیمە پزیشکییەکان و تەکنەلۆژیای پێشکەوتوومان بکە
+            کە بێست لایفی کردووە بە ڕابەری چاودێریی تەندروستی پایەبەرز.
           </p>
         </div>
 
