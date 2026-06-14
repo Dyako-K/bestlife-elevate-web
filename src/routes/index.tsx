@@ -116,7 +116,7 @@ const services = [
 ];
 
 const stats = [
-  { value: "+٢٥", label: "ساڵ لە نایابیدا" },
+  { value: "+٥", label: "ساڵی ئەزموون" },
   { value: "+٢٠٠", label: "پزیشکی پسپۆڕ" },
   { value: "+٥٠ هەزار", label: "نەخۆش چارەسەرکراوە" },
   { value: "٪٩٩", label: "ڕەزامەندیی نەخۆشان" },
