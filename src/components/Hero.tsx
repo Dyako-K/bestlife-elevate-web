@@ -1,6 +1,8 @@
 import { Link } from "@tanstack/react-router";
 import { ArrowLeft, Shield, Clock, Users } from "lucide-react";
-import heroImage from "@/assets/hero-medical.jpg";
+import heroAsset from "@/assets/best-life-hero.png.asset.json";
+
+const heroImage = heroAsset.url;
 
 export function Hero() {
   return (
