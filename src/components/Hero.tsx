@@ -27,9 +27,9 @@ export function Hero() {
           </h1>
 
           <p className="mt-5 max-w-md text-base leading-relaxed text-muted-foreground md:text-lg animate-fade-in-up delay-200">
-            ئەزموونی چاودێری پزیشکی لە ئاستی جیهانیدا، پێشکەشکراو بە بەزەیی، وردی و
+            ئەزموونێکی چاودێری پزیشکی لە ئاستی جیهانیدا، پێشکەشکدەکرێت بە وردی و
             پابەندبوونێکی بێ کۆتایی بە تەندروستی تۆ. گەشتی تۆ بەرەو تەندروستییەکی باشتر
-            لێرە دەست پێدەکات.
+            لێرەوە دەست پێدەکات.
           </p>
 
           <div className="mt-8 flex flex-wrap items-center gap-4 animate-fade-in-up delay-300">
