@@ -81,10 +81,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "نەخۆشخانەی بێست لایف چاودێریی پزیشکی لە ئاستی جیهانیدا پێشکەش دەکات بە بەزەیی و وردی." },
       { name: "author", content: "Best Life Hospital" },
       { property: "og:title", content: "نەخۆشخانەی بێست لایف | چاودێریی تەندروستی پایەبەرز" },
-      { property: "og:description", content: "تەندروستی تۆ. بەڵێنی ژیانمان." },
+      { property: "og:description", content: "نەخۆشخانەی بێست لایف چاودێریی پزیشکی لە ئاستی جیهانیدا پێشکەش دەکات بە بەزەیی و وردی." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@BestLifeHospital" },
+      { name: "twitter:title", content: "نەخۆشخانەی بێست لایف | چاودێریی تەندروستی پایەبەرز" },
+      { name: "twitter:description", content: "نەخۆشخانەی بێست لایف چاودێریی پزیشکی لە ئاستی جیهانیدا پێشکەش دەکات بە بەزەیی و وردی." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d26ad03f-8a69-4115-bee2-5905b3918c9a/id-preview-964a22b5--c1436965-52b0-4916-a009-d686940f0a90.lovable.app-1781431660330.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d26ad03f-8a69-4115-bee2-5905b3918c9a/id-preview-964a22b5--c1436965-52b0-4916-a009-d686940f0a90.lovable.app-1781431660330.png" },
     ],
     links: [
       {
